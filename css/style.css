@@ -1,0 +1,1052 @@
+/* General Styles */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Merienda', cursive;
+}
+ul{
+    list-style: none;
+}
+.underLine{
+    width: 50px;
+    height: 3px;
+    margin: 1px auto 40px auto;
+    background-color: #7c2b2b;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    border-radius: 10px;
+}
+.container{
+    width: 60%;
+    margin: auto;
+    margin-top: 40px;
+}
+.section-common{
+    width: 100%;
+    background-color: #f7f4f0;
+    padding: 50px 0;
+    text-align: center;
+}
+/* End General Style */
+.section{
+    overflow: auto;
+    background-image: url(../images/wall12.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:50% 50%;  
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: #1d1a1a65;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.clearfix{
+    clear: both;
+}
+.header img{
+    height: 40px;
+    float: left;
+    margin-left: 80px;
+    margin-top: 7px;
+}
+.header .listMenu{
+    float: right;
+    margin-right: 80px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+/* ul > li  */
+.header .listMenu .mainChild{
+    display: inline-block;
+    margin-right: 15px;
+}
+.listMenu li a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    width: 100%;
+}
+.darr{
+    font-size: 10px;
+}
+.secMenu{
+    position: relative;
+}
+.listMenu li a:hover{
+    color: rgb(177,42,38);
+}
+/* menu list style */
+.secMenu ul{
+    background-color: #1d1a1a65;
+    position: absolute;
+    top: 38px;
+    left: -41px;
+    padding: 0;
+    width: 150px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    visibility: hidden;
+}
+.secMenu:hover ul{
+    visibility: visible;
+    z-index: 1000;
+}
+.secMenu li{
+    margin-left: 0;
+    padding: 8px 20px;
+}
+a{
+    position: relative;
+    text-decoration: none;
+}
+
+.listMenu li a::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transition: 0.5s;    
+}
+.listMenu li a:hover::after{
+    width: 100%;
+    height: 2px;
+}
+.listMenu .active a::after{
+    width: 100%;
+    height: 2px;
+}
+/* End Menu List Style */
+/* -----------------Start First Section---------------- */
+.mainSection-overlay{
+    height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1; 
+    visibility: visible;
+}
+.headingSection{
+    width: 40%;
+    text-align: center;
+    padding-bottom: 8vh;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px 0px;
+}
+
+.headingSection h1{
+    color: white;
+    text-transform: uppercase;
+}
+.headingSection h2{
+    color: white;
+    margin-top: 10px;
+}
+.search{
+    position: relative;
+    width: 70%;
+    margin: auto;
+}
+.txtSearch{
+    padding: 10px 200px 10px 10px;
+    outline: none;
+    border: none;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-family: 'Merienda', cursive;
+}
+.searchIcon{
+    position: absolute;
+    bottom: 10px; 
+    right: 20px;
+}
+.btns{
+    margin-top: 40px;
+}
+.btn{
+    padding: 10px 30px;
+    font-family: 'Merienda', cursive;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+}
+.btn:hover{
+    opacity: 0.8;
+}
+.bookBtn{
+    background-color: #7c2b2b;
+    color: white;
+}
+.orderBtn{
+    margin-right: 10px;
+}
+/* Start of SectionTwo */
+.section-common h2{
+    margin-top: 0;
+    font-size: 28px;
+}
+.tasteCard{
+    overflow: auto;
+    padding: 3px 0px;
+    margin-bottom: 15px;
+}
+
+.tasteCard .card{
+    float: left;
+    width: 30%;
+    border: 1px solid rgba(177, 43, 38, 0.644);
+    padding: 10px 5px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 3;
+}
+.middleCard{
+    margin:0 5%;
+}
+.tasteCard .card h3{
+    margin: 8px 0;
+    text-transform: capitalize;
+}
+.tasteCard .card p{
+    letter-spacing: 0.9px;
+}
+.tasteCard .card h3{
+    color: #292828;
+}
+.tasteCard .card p{
+    color: #555;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.tasteIcons{
+    color:rgb(177,42,38) ;
+    font-size: 20px;
+    margin-top: 15px;
+}
+.tasteCard .card a{
+    color: rgb(177,42,38);
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.tasteCard .card:hover h3{
+    color:#dfcbab;
+    transition: 1.2s;
+}
+.tasteCard .card:hover p{
+    color: #aca9a9;
+    transition: 1.2s;
+}
+.tasteCard .card:hover i{
+    color: #dfcbab;
+    transition: 1.2s;
+}
+.tasteCard .card:hover a{
+    transition: 1.2s;
+    color: #dfcbab
+}
+
+.card::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    transition: 0.5s;
+    background-color: #7c2b2b;
+    z-index: -1;
+    border-radius: 5px;
+}
+.card:hover::after{
+    width: 100%;
+    height: 100%;
+}
+/*  */
+/* End of Section Two*/
+
+/* Start Section Three Recipes */
+.bg-white{
+    background-color: white;
+}
+.sectionThree .underLine{
+    margin: auto;
+}
+/* .sectionThree .container{
+    margin-top: 40px;
+} */
+.recipeimg{
+    width: 90%;
+    height: 90%;
+    border-radius: 5px;
+}
+.recipeCard{
+    float: left;
+    width: 24%;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: 2s;
+}
+.recipeCard:hover .recipe-overlay{
+    visibility: visible;
+    opacity: 1;
+    transition:2s;
+}
+
+.recipeCard2{
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.recipeCard3{
+    margin-right: 1%;
+}
+.recipe2,.recipe1{
+    height: 150px;
+}
+.recipe2{
+    margin-top: 5px;
+}
+
+.recipe-overlay{
+    background-color: #1d1a1a93;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 5px;
+    padding: 40px 0;
+    color: white;
+    visibility: hidden;
+}
+.recipe-overlay h5{
+    font-weight:400;
+    text-transform:uppercase;
+    font-size: 12px;
+    margin-bottom: 5px;
+    transition: 0.5s;
+}
+.recipe-overlay p{
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    transition: 1s;
+}
+.recipe-icon{
+    border: 1px solid #7c2b2b;
+    padding: 3px 5px;
+    width: 30px;
+    background-color: #dfcbabbe;
+    color: #7c2b2b;
+}
+.recipe-overlay .shared{
+    line-height: 2.5;
+}
+.recipe-overlay .rec-icons{
+    transition: 2s;
+}
+.recipe-icon:hover{
+    background-color: #c59b9b;
+    opacity: 1;
+}
+.recipeCard:hover .shared{
+    line-height: 1.5;
+}
+/* End Section Three Recipes */
+
+/* Start Section Four Offers */
+.offerSection{
+    text-align: center;
+}
+.offer1,.offer2{
+    overflow: auto;
+}
+.offer2{
+    margin-top: 20px;
+}
+.offerCard{
+    float: left;
+    width: 30%;
+    position: relative;
+    padding: 20px 10px;
+    overflow: auto;
+    border: 1px solid #7c2b2b;
+    z-index: 3;
+}
+.offerCard::After{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    background-color: #7c2b2b;
+    transition: 1s;
+    z-index: -1;
+    
+}
+.offerCard:hover::after{
+    width: 100%;
+    height: 100%;
+}
+.offerCard:hover .offer-overlay{
+    visibility: visible;
+}
+.offerCard:hover h3{
+    color:white;
+}
+.offerCard:hover p{
+    color: #aca9a9;
+}
+.offerCard:hover i{
+    color: #dfcbab;
+}
+.middleCard{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.offerCard i{
+    float: left;
+    font-size: 30px;
+    width: 10%;
+    color: #7c2b2b;
+    transition: 2s;
+    margin-right: 10%;
+    
+}
+.offerCard .offer-text{
+    float: left;
+    width: 80%;
+    text-align: justify;
+}
+.offerCard p{
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    font-weight: 100;
+    text-transform: capitalize;
+    transition: 2s;
+    text-align: left;
+}
+.offerCard h3{
+    margin-bottom: 8px;
+    transition: 1.5s;
+}
+/* End Section Four Offers */
+
+/* Start Section 5 Why  */
+.whyTxt{
+    width: 50%;
+    float: left;
+    padding: 0px 20px;
+    text-align: justify;
+}
+.whyImg{
+    width: 50%;
+    height: 400px;
+    float: left;
+}
+.whyImg img{
+    width: 100%;
+    height: 90%;
+}
+.whySection .container{
+    overflow: auto;
+}
+.whyList li{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;
+    border: 1px solid #7c2b2b;
+}
+.firstitem{
+    background-color: #7c2b2b;
+}
+.whyList li:hover{
+    background-color: #7c2b2b;
+}
+.whyTxt h2{
+    text-align: left;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.whyTxt p{
+    text-align: justify;
+    line-height: 1.6;
+    color: #555;
+}
+.whySection .underLine{
+    margin-left: 0;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+.WhyListTxt{
+    margin-top: 20px;
+}
+.WhyListTxt li{
+    line-height: 35px;
+    color: #555;
+}
+.WhyListTxt li span{
+    width: 15px;
+    text-align: center;
+    display: inline-block;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #7c2b2b;
+    margin-right: 5px;
+}
+.WhyListTxt li span i{
+    font-size: 12px;
+    color: #7c2b2b;
+}
+/* End Section 5 Why */
+
+/* Start section 6 Rate */
+.rateSection{
+    height: 250px;
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/AdobeStock_241386099_Preview.jpeg);
+    background-size:cover;
+    background-position:left top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+.rate-overlay{
+    visibility: visible;
+    background-color: rgba(63, 59, 59, 0.397);
+}
+.rateSection .container{
+    height: 50%;
+    margin-top: 0;
+    overflow: auto;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.rateCard{
+    float: left;
+    width: 20%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #5555558c;
+    padding: 20px 0;
+}
+.rateCard:hover{
+    background-color: #7c2b2b9a;
+}
+.rate-middle1{
+    margin-left: 6.6%;
+    margin-right: 6.6%;
+}
+.rate-middle2{
+    margin-right: 6.6%;
+}
+.rateCard i{
+    font-size: 30px;
+    color:#dfcbab;
+    margin-bottom: 5px;
+}
+.rateCard .rateTxt1 {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+.rateCard .rateTxt2 {
+    font-size: 12px;
+    font-weight: lighter;
+    color: white;
+}
+/* End Section 6 Rate */
+
+/* start Section 7 pricing  */
+.PricingSection{
+    padding-top: 20px;
+}
+.PricingSection .container{
+    overflow: auto;
+    width: 70%;
+    margin-top: 30px; 
+}
+
+.PricingSection .underLine{
+    text-align: center;
+    margin: auto;
+}
+.PricingSection .menu-item{
+    float: left;
+    width: 30%;
+    border: 1px solid #7c2b2b;
+    border-radius: 5px;
+    position: relative;
+}
+.PricingSection .menu-item::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: #7c2b2b;
+    opacity: 0.5;
+    transition: 1s;
+}
+.PricingSection .menu-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+}
+.PricingSection .menu-item:hover p{
+    color: #7c2b2b;
+}
+.PricingSection .menu-item:hover h2{
+    color: #7c2b2b;
+}
+.PricingSection .menu-item:hover h3{
+    color: #7c2b2b;
+}
+.PricingSection .menu-item .item-content{
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    padding: 10px 0;
+}
+.middle-item{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.PricingSection .menu-item img{
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.menu-item .price{
+    border: 2px solid #7c2b2b;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    margin:auto;
+    margin-top: 10px;
+}
+
+.menu-item .pricetitle{
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-top: 15px;
+}
+.menu-item h3{
+    margin-top: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.menu-item .list{
+    list-style: none;
+    margin: 10px auto;
+    text-align: center;
+}
+.menu-item li{
+    color: #464444;
+    font-weight: normal;
+    line-height: 30px;
+}
+.menu-item .subscribeBtn{
+    padding: 5px 10px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px auto;
+    display: block;
+    border:2px solid #7c2b2b;
+
+}
+.menu-item .subscribeBtn:hover{
+    background-color: #7c2b2b;
+    color: white;
+}
+/* end section 7 pricing */
+
+/* Start Section 8 Comments */
+.commentSection{
+    background-image: url(../images/comment1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    padding: 20px 0;
+}
+.commentSection .overlay{
+    visibility: visible;
+    background-color: rgba(0,0,0,0.7);
+}
+.comment-title{
+    color: white;
+}
+.cmain-header{
+    position: relative;
+    text-align: center;
+    margin-bottom: 0;
+}
+.commentSection .underLine{
+    margin-bottom: 0;
+    background-color: #dfcbab;
+}
+.commentSection .container{
+    overflow: auto;
+    position: relative;
+    z-index: 2;
+    margin: 20px auto;
+}
+.commentCard{
+    float: left;
+    width: 45%;
+    border-radius:5px;
+}
+.card-middle1{
+    margin-left: 10%;
+}
+.comment-header{
+    overflow: auto;
+    padding: 5px 20px;
+}
+.comment-header .comment-txt{
+ float: left;
+ padding: 10px 10px;
+ text-align: justify;
+ margin-top: 5px;
+}
+.comment-header .comment-txt h4{
+    font-size: 14px;
+    color: white;
+}
+.comment-header .comment-txt p{
+    font-size: 12px;
+    font-weight:100;
+    color: rgb(124, 124, 231);
+}
+.comment-header img{
+    float: left;
+    border-radius: 50%;
+    width: 70px;
+}
+.comment-detail{
+    text-align: justify;
+    padding: 5px 20px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: white;
+}
+/* End Section 8 Comments */
+
+/* Start section 9 team */
+.team-section .container{
+    margin: 20px auto;
+    overflow: auto;
+}
+.team{
+    float: left;
+    width: 30%;
+    background-color: rgba(63, 59, 59, 0.397);
+    padding: 10px 20px;
+    position: relative;
+}
+.team-img{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 5px;
+    position: relative;
+}
+.team-img img{
+    width: 100%;
+    height: 100%;
+}
+.team-section .overlay{
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 0;
+    top: 0;
+    z-index: 3;
+}
+.team:hover .overlay{
+    visibility: visible;
+}
+.team-img .overlay a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #7c2b2ba4;
+    margin-left: auto;
+    
+}
+.team-img .overlay a i{
+    font-size: 14px;
+    line-height: 40px;
+    color: white;
+}
+.team-middle{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.team-content h4{
+    margin-top: 0;
+    font-size: 16px;
+}
+.team-content p{
+   font-size: 12px;
+   color: #555;
+   text-transform: uppercase;
+}
+.team::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    background-color: #858484;
+    transition: 1s;
+}
+.team:hover::after{
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+}
+.team:hover .team-content h4{
+    color: #7c2b2b;
+}
+.team:hover .team-content p{
+    color: white;
+}
+/* End section 9 team */
+
+/* start section 10 team */
+.news-section{
+    padding-top: 30px;
+}
+.news-section .new-title{
+    font-size: 14px;
+    color: #555;
+}
+.news-section .container{
+    width: 70%;
+    overflow: auto;
+}
+.news-section .underLine{
+    margin-bottom: 10px;
+}
+.news-section .news-card{
+    float: left;
+    width: 30%;
+    text-align: start;
+    text-align: justify;
+    position: relative;
+    padding: 0 15px;
+    z-index: 3;
+}
+.news-section .news-card::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: #7c2b2ba4;
+    opacity: 0.6;
+    transition: 1s;
+    z-index: -1;
+}
+.news-section .news-card:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}
+.middle-new{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.news-card img{
+    width: 90%;
+    height: 150px;
+}
+.news-icons{
+    line-height: 40px;
+}
+.news-icons span{
+    font-size: 12px;
+    font-weight: 100;
+    display: inline-block;
+    margin-right: 10px;
+}
+.news-icons span i{
+    color: #7c2b2b;
+}
+.news-content h4{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.news-content p{
+    line-height: 1.7;
+    font-weight: lighter;
+    font-size: 14px;
+    color: #615959;
+}
+.news-content a{
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    color: #7c2b2b;
+    margin-bottom: 20px;
+}
+/* End section 10 team */
+/* Start section 11 reservation section */
+.reser-section{
+    background-image: url(../images/reservation.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 3;
+    color: white;
+    padding: 0 0;
+}
+.reser-section .overlay{
+    visibility: visible;
+    background-color: rgba(0,0,0,0.7);
+    z-index: -1;
+}
+.reser-section .container{
+    overflow: auto;
+    margin-top: 0;
+    /* border: 1px solid; */
+    padding: 30px;
+
+}
+.reser-section .form{
+    /* border: 1px solid; */
+}
+.reser-section .container .underLine{
+    margin: -10px 0 20px;
+}
+.reser-section .form label{
+    display: block;
+    margin-bottom: 8px;
+}
+.reser-section .form input[type='text']{
+    padding: 5px 50px 5px 10px;
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+    outline: 0;
+}
+.reser-section .form textarea{
+    width: 100%;
+    outline: 0;
+    padding: 10px;
+    font-family: 'Merienda', cursive;
+}
+.reser-section .form .sendbtn{
+    padding: 5px 40px;
+    margin-top: 20px;
+    font-family: 'Merienda', cursive;
+    display: block;
+    margin-left: auto;
+    background-color: #7c2b2b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.reser-section .form .sendbtn:hover{
+    background-color: #7c2b2b8c;
+}
+.reser-section .map{
+    margin: 0;
+    padding: 0;
+    float: left;
+    height: 425px;
+    width: 50%;
+    /* border: 1px solid; */
+}
+.reser-section .map iframe{
+    width: 100%;
+    height: 100%;
+}
+/* end section 11 reservation section */
+/* start section  12 footer */
+.footer{
+    background-color: #7c2b2b70;
+    position: static;
+    bottom: 0;
+    padding: 30px 0;
+}
+.footer .container{
+    margin: 0 auto;
+    padding: 0;
+}
+.footer img{
+    width: 120px;
+}
+.footer-icons{
+    margin-top: 15px;
+}
+.footer-icons li{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #7c2b2bd0;
+}
+.footer-icons li:hover{
+    background-color: #7c2b2b;
+}
+.footer-icons a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.footer-icons i{
+    line-height: 40px;
+    color:white;
+}
+.footer span{
+    font-size: 11px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #555;
+    margin-top: 10px;
+    display: block;
+}
+/* End section  12 footer */
